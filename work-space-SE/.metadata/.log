@@ -522,3 +522,108 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SESSION 2023-01-03 18:10:55.328 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2023-01-03 18:11:04.980
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-01-03 18:11:04.980
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2023-01-03 18:11:08.028
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-01-03 18:11:08.029
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.jface 2 0 2023-01-03 18:11:10.190
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-03 18:11:10.190
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f1d5f3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50ba19df,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-03 18:11:10.191
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@726882da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f0deba2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2023-01-03 18:11:17.308
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.ui.navigator 2 0 2023-01-03 18:11:25.281
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-03 18:11:25.345
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\User'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.common.jdt.debug 4 0 2023-01-03 18:13:45.678
+!MESSAGE class org.jboss.tools.common.jdt.debug.tools.internal.Tools cannot access class sun.jvmstat.monitor.MonitoredHost (in module jdk.internal.jvmstat) because module jdk.internal.jvmstat does not export sun.jvmstat.monitor to unnamed module @211ce049
+!STACK 1
+org.jboss.tools.common.jdt.debug.tools.ToolsCoreException: class org.jboss.tools.common.jdt.debug.tools.internal.Tools cannot access class sun.jvmstat.monitor.MonitoredHost (in module jdk.internal.jvmstat) because module jdk.internal.jvmstat does not export sun.jvmstat.monitor to unnamed module @211ce049
+	at org.jboss.tools.common.jdt.debug.tools.internal.Tools.invokeGetMonitoredHost(Tools.java:189)
+	at org.jboss.tools.common.jdt.debug.tools.internal.Tools.invokeActiveVms(Tools.java:196)
+	at org.jboss.tools.common.jdt.debug.tools.ToolsCore.getActiveVmPids(ToolsCore.java:97)
+	at org.jboss.tools.common.jdt.debug.RemoteDebugActivator.getVmModels(RemoteDebugActivator.java:123)
+	at org.jboss.tools.common.jdt.debug.RemoteDebugActivator.getDebugModels(RemoteDebugActivator.java:203)
+	at org.jboss.tools.common.jdt.debug.RemoteDebugActivator.getDebugModels(RemoteDebugActivator.java:237)
+	at org.jboss.tools.common.jdt.debug.ui.RemoteDebugUIActivator.discoverRemoteApplication(RemoteDebugUIActivator.java:139)
+	at org.jboss.tools.common.jdt.debug.ui.RemoteDebugUIActivator$1.run(RemoteDebugUIActivator.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.IllegalAccessException: class org.jboss.tools.common.jdt.debug.tools.internal.Tools cannot access class sun.jvmstat.monitor.MonitoredHost (in module jdk.internal.jvmstat) because module jdk.internal.jvmstat does not export sun.jvmstat.monitor to unnamed module @211ce049
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at org.jboss.tools.common.jdt.debug.tools.internal.Tools.invokeGetMonitoredHost(Tools.java:186)
+	... 8 more
+!SUBENTRY 1 org.jboss.tools.common.jdt.debug 4 0 2023-01-03 18:13:45.680
+!MESSAGE class org.jboss.tools.common.jdt.debug.tools.internal.Tools cannot access class sun.jvmstat.monitor.MonitoredHost (in module jdk.internal.jvmstat) because module jdk.internal.jvmstat does not export sun.jvmstat.monitor to unnamed module @211ce049
+!STACK 0
+java.lang.IllegalAccessException: class org.jboss.tools.common.jdt.debug.tools.internal.Tools cannot access class sun.jvmstat.monitor.MonitoredHost (in module jdk.internal.jvmstat) because module jdk.internal.jvmstat does not export sun.jvmstat.monitor to unnamed module @211ce049
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at org.jboss.tools.common.jdt.debug.tools.internal.Tools.invokeGetMonitoredHost(Tools.java:186)
+	at org.jboss.tools.common.jdt.debug.tools.internal.Tools.invokeActiveVms(Tools.java:196)
+	at org.jboss.tools.common.jdt.debug.tools.ToolsCore.getActiveVmPids(ToolsCore.java:97)
+	at org.jboss.tools.common.jdt.debug.RemoteDebugActivator.getVmModels(RemoteDebugActivator.java:123)
+	at org.jboss.tools.common.jdt.debug.RemoteDebugActivator.getDebugModels(RemoteDebugActivator.java:203)
+	at org.jboss.tools.common.jdt.debug.RemoteDebugActivator.getDebugModels(RemoteDebugActivator.java:237)
+	at org.jboss.tools.common.jdt.debug.ui.RemoteDebugUIActivator.discoverRemoteApplication(RemoteDebugUIActivator.java:139)
+	at org.jboss.tools.common.jdt.debug.ui.RemoteDebugUIActivator$1.run(RemoteDebugUIActivator.java:95)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

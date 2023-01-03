@@ -1,0 +1,14 @@
+package inroduction;
+
+public class Operatorsdemo {
+	public static void main(String[] args) {
+		int sum=0;
+		int x =10;
+		for(int i =0; i <x;i++) {
+			sum=sum+i;
+		}
+		System.out.println(sum);
+		
+	}
+
+}
