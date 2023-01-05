@@ -1,0 +1,15 @@
+package inroduction;
+
+public class ifelseDemo {
+
+	public static void main(String[] args) {
+//		if-else condition demo
+		boolean booked=true;
+		if(booked) {
+			System.out.println("Your tickets for Movie is Confirmed , Enjoy the Show");
+		}else {
+			System.out.println("sorry seats are full ! try again for the next show");
+		}
+	}
+
+}

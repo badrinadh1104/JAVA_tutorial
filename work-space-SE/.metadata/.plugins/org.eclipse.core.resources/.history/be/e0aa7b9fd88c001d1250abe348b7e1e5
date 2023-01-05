@@ -1,0 +1,14 @@
+package inroduction;
+
+import java.util.Scanner;
+
+public class switchcaseDemo {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+
+		System.out.println("Enter your name : ");
+		String name = scan.next();
+		System.out.println("My name is "+name);
+	}
+
+}

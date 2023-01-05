@@ -1,0 +1,18 @@
+package inroduction;
+
+import java.util.Scanner;
+
+public class dowhiledemo {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		do {
+			System.out.println("choose from the below options\n"
+					+ "1 . personal details\n"
+					+ "2 . Admission details\n"
+					+ "3 . Fee details\n"
+					+ "4 . Student Progress\n"
+					+ "5 . More information");
+		}while(11>3);
+	}
+
+}

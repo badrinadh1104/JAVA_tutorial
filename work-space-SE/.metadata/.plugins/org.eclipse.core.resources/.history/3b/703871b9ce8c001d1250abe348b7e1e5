@@ -1,0 +1,10 @@
+package inroduction;
+
+public class ifelseDemo {
+
+	public static void main(String[] args) {
+//		if-else condition demo
+
+	}
+
+}

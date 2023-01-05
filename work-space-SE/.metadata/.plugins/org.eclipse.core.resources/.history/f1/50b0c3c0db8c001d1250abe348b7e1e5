@@ -1,0 +1,47 @@
+package inroduction;
+
+import java.util.Scanner;
+
+public class dowhiledemo {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		boolean exit = false;
+		do {
+			System.out.println("choose from the below options\n"
+					+ "1 . personal details\n"
+					+ "2 . Admission details\n"
+					+ "3 . Fee details\n"
+					+ "4 . Student Progress\n"
+					+ "5 . More information\n"
+					+ "6 . Exit\n "
+					+ "**************************\n "
+					+ " Enter your choice :");
+			int choice = scan.nextInt();
+			switch(choice) {
+			case 1:
+				System.out.println("In Personal Details Section");
+				break;
+			case 2:
+				System.out.println("In Admission Details Section");
+				break;
+			case 3:
+				System.out.println("In Fee deatails Section");
+				break;
+			case 4:
+				System.out.println("In Student Progress Section");
+				break;
+			case 5:
+				System.out.println("More information section");
+				break;
+			case 6:
+				exit=true;
+				break;
+			default:
+				throw new IllegalArgumentException("Please Enter valid Number from 1-6");
+				
+			}
+			
+		}while(!exit);
+	}
+
+}
